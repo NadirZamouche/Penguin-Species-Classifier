@@ -1,5 +1,5 @@
 <div style="text-align:center;">
-![18-species-of-penguins](https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/0965a087-189e-4950-9596-56ec144bacad)
+    <img src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/0965a087-189e-4950-9596-56ec144bacad" alt="18 species of penguins">
 </div>div>
 
 ## 📝 Description
