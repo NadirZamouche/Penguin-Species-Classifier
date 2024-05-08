@@ -64,3 +64,6 @@ The analysis indicates the distinguishing characteristics for each penguin speci
 - Species 2: CulmenLength (40.9 - 58) mm ; CulmenDepth (16.4 - 20.8) mm ; FlipperLength (178 - 212) mm ; BodyMass (2700 - 4800) g.
 
 As shown earlier, Culmen Length serves as the primary factor in determining the species to which a penguin belongs.
+Also, this model has shown very excellent results where he has correctly classified 270 penguins out of 271, meaning he only missed 1 therfore it can be implemented for later use as you can see in this illustration:
+
+<img width="424" alt="Results" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/e403b7e2-6c4e-4fa5-84d4-5a71f6039bd2">
