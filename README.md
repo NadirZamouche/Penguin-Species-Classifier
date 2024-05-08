@@ -46,23 +46,20 @@ The 'penguins.csv'  file contains data on various attributes. Here's a breakdown
 
 * Tested the final model on the test set and got relatively better results:
 
-<img width="162" alt="Evaluation Metrics (Tuned Model)" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/479970f1-28d1-4e94-8443-9d838507afc5">
+<img width="146" alt="Evaluation Metric (Tuned Model)" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/1186fc72-7af0-488c-9815-0afca32e62e3">
 
 * Retested the final model on the whole entry dataset and got even better results:
 
-<img width="134" alt="Evaluation Metrics (Whole Set)" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/f96d4cf8-9219-4af4-8b81-2fe07b42dc13">
+<img width="106" alt="Evaluation Metric (While Set)" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/1a57a099-731b-42f8-9bd9-ebcd6cf41ca2">
 
 ## :chart_with_upwards_trend: Feature Importance
-* Here is a chart showing the sorted contribution of each column to the target column "median_house_value":
+* Here is a chart showing the sorted contribution of each column to the target column "species":
 
-<img width="459" alt="Feature Importance" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/588f84d1-4657-499e-8f8a-64ea290257ef">
+<img width="497" alt="Feature Importance" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/4f26d707-06ad-4be4-9c9b-ca0bebeddba8">
 
 ## 🔨 Conclusion
-The analysis highlights the importance of ocean proximity, particularly being inland, followed by island properties, in predicting house prices. Additionally, median income is also a significant factor in determining housing prices, although slightly less influential compared to ocean proximity. This information can be valuable for understanding the drivers of housing market dynamics and making informed decisions in real estate investments or policy-making.
-
 The analysis indicates the distinguishing characteristics for each penguin species as follows:
-
-Species 0: CulmenLength (32.1 - 46) mm ; CulmenDepth (15.5 - 21.5) mm ; FlipperLength (172 - 210) mm ; BodyMass (2850 - 4775) g.
-Species 1: CulmenLength (40.9 - 59.6) mm ; CulmenDepth (13.1 - 17.3) mm ; FlipperLength (203 - 231) mm ; BodyMass (3950 - 6300) g.
-Species 2: CulmenLength (40.9 - 58) mm ; CulmenDepth (16.4 - 20.8) mm ; FlipperLength (178 - 212) mm ; BodyMass (2700 - 4800) g.
+- Species 0: CulmenLength (32.1 - 46) mm ; CulmenDepth (15.5 - 21.5) mm ; FlipperLength (172 - 210) mm ; BodyMass (2850 - 4775) g.
+- Species 1: CulmenLength (40.9 - 59.6) mm ; CulmenDepth (13.1 - 17.3) mm ; FlipperLength (203 - 231) mm ; BodyMass (3950 - 6300) g.
+- Species 2: CulmenLength (40.9 - 58) mm ; CulmenDepth (16.4 - 20.8) mm ; FlipperLength (178 - 212) mm ; BodyMass (2700 - 4800) g.
 As shown earlier, Culmen Length serves as the primary factor in determining the species to which a penguin belongs.
