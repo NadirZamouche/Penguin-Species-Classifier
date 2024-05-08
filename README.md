@@ -16,29 +16,33 @@ The 'penguins.csv'  file contains data on various attributes. Here's a breakdown
 
 ## :mag: Data Cleansing
 * Filled missing values using species-specific mean.
-* Created boxplots for each column to check for outliers. Here is a box plot for Population column:
+* Created boxplots for each column to check for outliers. Here is a box plot for CulmenLength column:
 
+<img width="542" alt="Box Plot for Culmenlength" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/35d14888-b365-404e-87f2-9f4b454869ef">
 
 
 * Ploted histograms for each column to see if the data is balanced or not:
 
+<img width="752" alt="Histograms" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/f023efcf-a381-4487-80c9-dd8736d555e0">
 
 
 * Ploted heat map for correlation matrix:
 
+<img width="537" alt="Correlation Matrix" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/e69d2456-2155-44d3-9f55-eb457b67793b">
 
 
 * Applied the min max scaler since there were no outliers within the data.
 
 ## :desktop_computer:	Modeling
 * Utilizing the cleansed data. I partitioned the data into two sets: 75% designated for training and 25% allocated for testing using StratifiedShuffleSplit to ensure representative stratification across the dataset.
-* Employed five distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics for each model and discerned the optimal choice based on the overall metrics scores.
+* Employed five distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics with the multi_class set to ovr "OneVersusRest" for each model and discerned the optimal choice based on the overall metrics scores.
 
-<img width="473" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/b0a51247-230a-4854-b6dd-ad67f3d6fdd6">
+<img width="451" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/4b0fc406-258f-4a89-b929-d4c4b4921a14">
 
-* Conducted hyper-parameter tuning for eXtream Gradient Bossting Regressor, meticulously exploring various settings to ascertain the most effective combination for optimal performance.
 
-<img width="262" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/bb93ef3d-9468-4a54-b284-2368f58f5512">
+* Conducted hyper-parameter tuning for Support Vector Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance.
+
+<img width="242" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/6c1563ca-8729-4455-b7d0-03d8350c7ecb">
 
 * Tested the final model on the test set and got relatively better results:
 
@@ -55,3 +59,10 @@ The 'penguins.csv'  file contains data on various attributes. Here's a breakdown
 
 ## 🔨 Conclusion
 The analysis highlights the importance of ocean proximity, particularly being inland, followed by island properties, in predicting house prices. Additionally, median income is also a significant factor in determining housing prices, although slightly less influential compared to ocean proximity. This information can be valuable for understanding the drivers of housing market dynamics and making informed decisions in real estate investments or policy-making.
+
+The analysis indicates the distinguishing characteristics for each penguin species as follows:
+
+Species 0: CulmenLength (32.1 - 46) mm ; CulmenDepth (15.5 - 21.5) mm ; FlipperLength (172 - 210) mm ; BodyMass (2850 - 4775) g.
+Species 1: CulmenLength (40.9 - 59.6) mm ; CulmenDepth (13.1 - 17.3) mm ; FlipperLength (203 - 231) mm ; BodyMass (3950 - 6300) g.
+Species 2: CulmenLength (40.9 - 58) mm ; CulmenDepth (16.4 - 20.8) mm ; FlipperLength (178 - 212) mm ; BodyMass (2700 - 4800) g.
+As shown earlier, Culmen Length serves as the primary factor in determining the species to which a penguin belongs.
