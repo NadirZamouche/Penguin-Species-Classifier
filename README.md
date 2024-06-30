@@ -67,4 +67,3 @@ As shown earlier, Culmen Length serves as the primary factor in determining the 
 Also, this model has shown very excellent results where he has correctly classified 270 penguins out of 271, meaning he only missed 1 therfore it can be implemented for later use as you can see in this illustration:
 
 <img width="523" alt="Results" src="https://github.com/NadirZamouche/Penguin-Species-Classifier/assets/95188070/2d9f97a1-241c-4f11-ac87-a97d27bd9ffd">
-
